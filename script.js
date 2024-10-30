@@ -176,8 +176,8 @@ function draw() {
   if (mode === "electricField") {
     drawFieldLines();
   } else if (mode === "electricPotential") {
-    for (let x = 0; x < canvas.width; x += 5) {
-      for (let y = 0; y < canvas.height; y += 5) {
+    for (let x = 0; x < canvas.width; x += 4) {
+      for (let y = 0; y < canvas.height; y += 4) {
         const V = electricPotential(x, y);
         let intensity;
         let color;
